@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "bens-openai-wrapper"
+version = "0.1.0"
+description = "A wrapper for OpenAI's API"
+authors = ["Benjamin Herman <benjamin@metanomial.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "openai" }]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.12.0"
+isort = "^5.11.2"
+pre-commit = "*"
+
+[tool.poetry.scripts]
+test = "test:run"
+
+[tool.isort]
+profile = "black"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
