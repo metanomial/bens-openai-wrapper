@@ -8,6 +8,7 @@ readme = "README.md"
 packages = [{ include = "openai" }]
 
 [tool.poetry.dependencies]
+aiohttp = "^3.8.3"
 python = "^3.7"
 
 [tool.poetry.group.dev.dependencies]
